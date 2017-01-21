@@ -8,3 +8,5 @@ $('input.autocomplete').autocomplete({
         "Google": 'http://placehold.it/250x250'
     }
 });
+
+//When the search icon is clicked
