@@ -12,7 +12,8 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(data) {
                 //When the call is a success
-                console.log(url);
+                $('#results').prepend(query)
+
             },
             error: function(message) {
                 alert('Error');
