@@ -8,14 +8,16 @@ $(document).ready(function() {
         $.ajax({
             type: "GET",
             url: url,
-            dataType: 'json',
+            dataType: 'jsonp',
             success: function(data) {
                 //When the call is a success
-                $('#results').prepend(data)
+                $('#results').prepend(data);
 
             },
             error: function(message) {
-                alert('Request failed, try again for ' + query);
+                alert('Request failed, try again for ' + url);
+                $('#results').prepend(data);
+
             }
 
         });
