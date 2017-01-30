@@ -8,7 +8,7 @@ $(document).ready(function() {
         $.ajax({
             type: "GET",
             url: url,
-            dataType: 'jsonp',
+            dataType: 'json',
             success: function(data) {
                 //When the call is a success
                 $('#results').prepend(data);
