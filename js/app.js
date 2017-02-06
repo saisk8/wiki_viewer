@@ -12,7 +12,7 @@ $(document).ready(function() {
             success: function(data) {
 
                 // First we clear the children from our class to make sure no previous results are showing.
-                $('.results').empty();
+                $('#results').empty();
 
                 // Then we also clear the array with the results before providing new information.
                 arrResults.length = 0;
@@ -24,7 +24,7 @@ $(document).ready(function() {
                     html = '<div id="articles"><a href="https://en.wikipedia.org/wiki/' + resArr[result].title + '"target="_blank"><h3>' + resArr[result].title + '</h3><p>' + resArr[result].snippet + '</p></a></div>';
 
                     // Displays the elements to the page
-                    $('.results').append(html);
+                    $('#results').append(html);
                 }
             }
         });
