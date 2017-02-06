@@ -26,7 +26,8 @@ $(document).ready(function() {
                     // Displays the elements to the page
                     $('#results').append(html);
                 }
-            }
+            },
+            error: alert('Not Working');
         });
     });
 
