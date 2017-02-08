@@ -9,5 +9,26 @@ $(document).ready(function() {
 })
 
 function search() {
+    $.ajax({
+        url: "https://en.wikipedia.org/w/api.php",
+        jsonp: "callback",
+        dataType: 'jsonp',
+        data: {
+            action: "query",
+            list: "search",
+            srsearch: $("#query").val(),
+            srinfo: "suggestion",
+            srlimit: "10",
+            format: "json"
+        },
+        xhrFields: {
+            withCredentials: true
+        },
+        success: display,
+        error: function() {
+            $("random").removeClass("hide");
+            $("text").removeClass("hide");
 
+        }
+    });
 }
