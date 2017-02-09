@@ -1,5 +1,9 @@
 $(document).ready(function() {
     $("#query").val(""); //Empty the search field when the page loads
+    $(".Reset").on("click", function() {
+        $("#query").val("");
+        $(".results").html("");
+    })
     $("#search").on("click", function() {
         search();
         $("#random").css("display", "none");
@@ -47,4 +51,7 @@ function display(data) {
         $(".results").append(html_content);
 
     });
+    var reset_button = '<a class="waves-effect waves-light btn Reset">Reset</a>';
+    $(".results").append(reset_button);
+
 }
