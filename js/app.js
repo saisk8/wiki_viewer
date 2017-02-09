@@ -41,7 +41,7 @@ function display(data) {
         html_content += '<div class="col s12 m12">';
         html_content += '<div class="card">';
         html_content += '<div class="card-content">'
-        html_content += '<span class="card-title">';
+        html_content += '<span class="card-title  blue-text text-darken-2">';
         html_content += result.title + "</span>";
         html_content += "<p>" + result.snippet + "</p>";
         html_content += '</div>';
