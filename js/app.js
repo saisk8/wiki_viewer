@@ -32,7 +32,7 @@ function display(data) {
     var html_content = "";
     $.each(data.query.search, function(index, result) {
         html_content += '<div class="row">';
-        html_content += '<div class="col s12 m6">';
+        html_content += '<div class="col s12 m12">';
         html_content += '<div class="card blue-grey darken-1">';
         html_content += '<div class="card-content white-text">'
         html_content += '<span class="card-title">';
