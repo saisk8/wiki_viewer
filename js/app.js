@@ -3,6 +3,7 @@ $(document).ready(function() {
     $(".Reset").on("click", function() {
         $("#query").val("");
         $(".results").html("");
+        $(".Reset").addClass("hide");
     })
     $("#search").on("click", function() {
         search();
@@ -33,6 +34,7 @@ function search() {
 // the display function, displays cards
 function display(data) {
     $(".results").html("");
+    $(".Reset").removeClass("hide");
     $.each(data.query.search, function(index, result) {
         var html_content = ""; // Initialize
         html_content += '<div class="row">';
@@ -44,14 +46,12 @@ function display(data) {
         html_content += "<p>" + result.snippet + "</p>";
         html_content += '</div>';
         html_content += '<div class="card-action">';
-        html_content += "<a href='https://en.wikipedia.org/wiki/" + result.title.replace(" ", "_") + "'>";
+        html_content += "<a href='https://en.wikipedia.org/wiki/" + result.title.replace(" ", "_") + "'";
+        html_content += 'target="_blank">';
         html_content += ' Link</a>';
         html_content += ' </div> </div> </div> </div>';
 
         $(".results").append(html_content);
 
     });
-    var reset_button = '<a class="waves-effect waves-light btn Reset">Reset</a>';
-    $(".results").append(reset_button);
-
 }
