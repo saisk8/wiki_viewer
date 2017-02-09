@@ -39,8 +39,8 @@ function display(data) {
         var html_content = ""; // Initialize
         html_content += '<div class="row">';
         html_content += '<div class="col s12 m12">';
-        html_content += '<div class="card blue-grey darken-1">';
-        html_content += '<div class="card-content white-text">'
+        html_content += '<div class="card">';
+        html_content += '<div class="card-content">'
         html_content += '<span class="card-title">';
         html_content += result.title + "</span>";
         html_content += "<p>" + result.snippet + "</p>";
