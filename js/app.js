@@ -26,11 +26,11 @@ function search() {
 
     });
 }
-
+// the display function, displays cards
 function display(data) {
     $(".results").html("");
-    var html_content = "";
     $.each(data.query.search, function(index, result) {
+        var html_content = ""; // Initialize
         html_content += '<div class="row">';
         html_content += '<div class="col s12 m12">';
         html_content += '<div class="card blue-grey darken-1">';
@@ -45,5 +45,6 @@ function display(data) {
         html_content += ' </div> </div> </div> </div>';
 
         $(".results").append(html_content);
+
     });
 }
