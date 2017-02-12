@@ -5,9 +5,12 @@ $(document).ready(function() {
         $(".results").html("");
         $(".Reset").addClass("hide");
     })
-    $("#search").on("click", function() {
-        search();
-        $("#random").css("display", "none");
+    $("#search").on("click keypress", function(e) {
+        if (e.keyCode == 13) {
+            search();
+            $("#random").css("display", "none");
+
+        }
     })
 })
 
