@@ -10,12 +10,6 @@ $(document).ready(function() {
         $("#random").css("display", "none");
 
     })
-    $(".searchbox").on("keypress", function(e) {
-        if (e.keyCode == 13) {
-            $("#random").css("display", "none");
-            search();
-        }
-    })
 })
 
 function search() {
