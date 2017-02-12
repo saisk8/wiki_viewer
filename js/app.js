@@ -5,7 +5,7 @@ $(document).ready(function() {
         $(".results").html("");
         $(".Reset").addClass("hide");
     })
-    $("#search").on("click", function(e) {
+    $("#search").on("click", function() {
         search();
         $("#random").css("display", "none");
 
