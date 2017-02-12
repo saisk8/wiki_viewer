@@ -6,10 +6,14 @@ $(document).ready(function() {
         $(".Reset").addClass("hide");
     })
     $("#search").on("click keypress", function(e) {
-        if (e.keyCode == 13) {
-            search();
-            $("#random").css("display", "none");
+        search();
+        $("#random").css("display", "none");
 
+    })
+    $(".searchbox").on("keypress", function(e) {
+        if (e.keyCode == 13) {
+            $("#random").css("display", "none");
+            search();
         }
     })
 })
