@@ -4,6 +4,7 @@ $(document).ready(function() {
         $("#query").val("");
         $(".results").html("");
         $(".Reset").addClass("hide");
+        $("#random").css("display", '')
     })
     $("#search").on("click", function() {
         search();
