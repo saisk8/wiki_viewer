@@ -7,8 +7,10 @@ $(document).ready(function() {
         $("#random").css("display", '')
     })
     $("#search").on("click", function() {
-        search();
-        $("#random").css("display", "none");
+        if ($('#query').val().length > 1) {
+            search()
+            $("#random").css("display", "none");
+        }
 
     })
 })
