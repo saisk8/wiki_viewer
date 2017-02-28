@@ -19,39 +19,41 @@
 </head>
 
 <body>
+    <main>
 
-    <div class="container">
-        <!-- Page Content -->
-        <h1 class="center-align">Wiki Viewer</h1>
-        <div class="row">
-            <div class="input-field col s10 m11">
-                <input id="query" type="text" class="validate">
-                <label for="query">So, what is it that you are looking for?</label>
+
+        <div class="container">
+            <!-- Page Content -->
+            <h1 class="center-align">Wiki Viewer</h1>
+            <div class="row">
+                <div class="input-field col s10 m11">
+                    <input id="query" type="text" class="validate">
+                    <label for="query">So, what is it that you are looking for?</label>
+                </div>
+                <div class="col s2 m1">
+                    <a class="btn-floating btn-large waves-effect waves-light orange"><i class="fa fa-search" aria-hidden='true' title='Search' id="search"></i></a>
+                </div>
             </div>
-            <div class="col s2 m1">
-                <a class="btn-floating btn-large waves-effect waves-light orange"><i class="fa fa-search" aria-hidden='true' title='Search' id="search"></i></a>
-            </div>
-        </div>
-        <div class="center-align">
-            <a href="https://en.wikipedia.org/wiki/Special:Random" class="waves-effect waves-light btn-large amber darken-3" target="_blank" id="random"><i class="fa fa-random pull-right" aria-hidden="true" title="Random"></i>
+            <div class="center-align">
+                <a href="https://en.wikipedia.org/wiki/Special:Random" class="waves-effect waves-light btn-large amber darken-3" target="_blank" id="random"><i class="fa fa-random pull-right" aria-hidden="true" title="Random"></i>
             Want something random? Click me!</a>
-            <a class="waves-effect waves-light btn Reset hide amber darken-3">Clear All</a>
-        </div>
-        <ul class="results">
-
-        </ul>
-    </div>
-
-    <!-- Footer -->
-    <footer class="page-footer fixed">
-        <div class="footer-copyright">
-            <div class="container">
-                © Developed by
-                <a class="grey-text text-lighten-4 " href="#!">Sai Somanath Komanduri</a>
+                <a class="waves-effect waves-light btn Reset hide amber darken-3">Clear All</a>
             </div>
-        </div>
-    </footer>
+            <ul class="results">
 
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer fixed">
+            <div>
+                <div class="container">
+                    © Developed by
+                    <a class="grey-text text-lighten-4 " href="#!">Sai Somanath Komanduri</a>
+                </div>
+            </div>
+        </footer>
+    </main>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
